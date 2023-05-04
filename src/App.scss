@@ -5,13 +5,13 @@
 
 body {
   padding: 10px;
-  background-color: gray;
+  background-color: lightgray;
 }
 
 .App {  
-  background-color: gray;
+  background-color: lightgray;
   .row {
-    background-color: gray;
+    background-color: lightgray;
     
     display: flex;
     gap: 10px;
@@ -19,7 +19,6 @@ body {
 
     .col {
       background-color: white;
-      border: 1px solid red;
       padding: 10px;
 
       .title {
@@ -33,6 +32,12 @@ body {
   .one {
     .col {
       flex: 33.33%;
+
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+      }
     }
 
     .volumes {

@@ -1,5 +1,6 @@
 import './App.scss';
 import { Line } from 'react-chartjs-2';
+import testImg from './assets/image.png'
 function App() {
   const chartData = {
     labels: "123",
@@ -15,11 +16,15 @@ function App() {
     <div className="App">
       <div className='row one'>
         <div className='col'>
-          Image
+          <img src={testImg} />
         </div>
-        <div className='col'>
-          <h2 style={{ textAlign: "center" }}>Line Chart</h2>
-        
+        <div className='col chart'>
+          <div className='title'>
+            Memory/CPU
+          </div>
+          <div className='content'>
+            
+          </div>
         </div>
         <div className='col volumes'>
           <div className='title'>
