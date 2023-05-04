@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background-color: gray;
+}
+
+.App {  
+  background-color: gray;
+  .row {
+    background-color: gray;
+    
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .col {
+      background-color: white;
+      border: 1px solid red;
+      padding: 10px;
+
+      .title {
+        color: blue;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .one {
+    .col {
+      flex: 33.33%;
+    }
+
+    .volumes {
+      .title {
+        color: blue;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+
+        .bar {
+          width: 100%;
+          height: 6px;
+          background-color: lightgray;
+          position: relative;
+
+          .progress-bar {
+            position: absolute;
+            height: 6px;
+            width: 60%;
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .two, .three {
+    .col {
+      &:nth-child(1) {
+        flex: 33.33%;
+      }
+
+      &:nth-child(2) {
+        flex: 66.66%;
+      }
+    }
+
+    .agent {
+      .content {
+        .agent-row {
+          display: flex;
+          justify-content: space-between;
+          padding: 4px 0px;
+          border-top: 1px solid lightgray;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+
+    .process {
+      .content {
+        .process-row {
+          display: flex;
+          padding: 4px 0px;
+          border-bottom: 1px solid lightgray;
+
+          span {
+            &:nth-child(1) {
+              width: 40px;
+            }
+            &:nth-child(2) {
+              width: 200px;
+            }
+            &:nth-child(3) {
+              width: 50px;
+            }
+            &:nth-child(4) {
+              width: 80px;
+            }
+            &:nth-child(5) {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .user-info {
+      .content {
+        .process-row {
+          color: gray;
+          padding: 4px 0px;
+        }
+      }
+    }
+
+    .events {
+      .content {
+        .events-row {
+          display: flex;
+          padding: 4px 0px;
+          border-top: 1px solid lightgray;
+
+          span {
+            &:nth-child(1) {
+              width: 80px;
+            }
+            &:nth-child(2) {
+              width: 240px;
+            }
+            &:nth-child(3) {
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
