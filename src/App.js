@@ -1,6 +1,7 @@
 import './App.scss';
 import { Line } from 'react-chartjs-2';
 import testImg from './assets/image.png'
+import chartImg from './assets/chart.png'
 function App() {
   const chartData = {
     labels: "123",
@@ -23,7 +24,7 @@ function App() {
             Memory/CPU
           </div>
           <div className='content'>
-            
+            <img src={chartImg} />
           </div>
         </div>
         <div className='col volumes'>

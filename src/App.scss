@@ -33,10 +33,17 @@ body {
     .col {
       flex: 33.33%;
 
-      &:first-child {
+      &:nth-child(1) {
         display: flex;
         justify-content: center;
         background-color: black;
+      }
+    }
+
+    .chart {
+      .content {
+        display: flex;
+        justify-content: center;
       }
     }
 
